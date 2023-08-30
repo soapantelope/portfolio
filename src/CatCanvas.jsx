@@ -115,8 +115,8 @@ function Cat() {
                 <primitive
                     ref={catDirectRef}
                     object={nodes.Character1_Hips}
-                    scale={0.3}
-                    position={[-10, 0, 10]}
+                    scale={0.35}
+                    position={[5, 0, 10]}
                     rotation={[Math.PI * 3, Math.PI / 1.5, Math.PI]} />
                 <skinnedMesh
                     name="Mesh002"
