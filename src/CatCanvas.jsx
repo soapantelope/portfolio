@@ -7,7 +7,7 @@ import * as THREE from 'three'
 
 export default function CatCanvas() {
     return (
-        <div className='canvasContainer'>
+        <div className='catCanvas'>
             <Canvas frameLoop="demand"
                 shadows
                 camera={{ position: [70, 0, 100], fov: 25 }}
@@ -40,7 +40,6 @@ function Cat() {
 
     useEffect(() => {
         window.addEventListener('mousemove', handleMouseMove)
-        console.log(nodes)
 
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
@@ -50,7 +49,7 @@ function Cat() {
     useFrame(() => {
         // let vertical = directionFromCat * 0.6;
         let vertical = distanceFromCat.y * Math.PI / 2;
-        let horizontal = distanceFromCat.x * Math.PI / 2;
+        let horizontal = distanceFromCat.x * Math.PI / 2 - Math.PI / 5;
         moveJoint(nodes.Character1_Neck, vertical / 2, horizontal / 2)
         moveJoint(nodes.Character1_Neck1, vertical / 2, horizontal / 2)
         moveJoint(nodes.Character1_Head, vertical / 3, horizontal / 3)
@@ -115,8 +114,8 @@ function Cat() {
                 <primitive
                     ref={catDirectRef}
                     object={nodes.Character1_Hips}
-                    scale={0.35}
-                    position={[5, 0, 10]}
+                    scale={0.3}
+                    position={[7, 1, 10]}
                     rotation={[Math.PI * 3, Math.PI / 1.5, Math.PI]} />
                 <skinnedMesh
                     name="Mesh002"

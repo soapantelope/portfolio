@@ -1,9 +1,11 @@
+html {}
+
 body {
     margin: 0px;
     padding: 0px;
     font-family: 'louis';
     background: #f5ebe6;
-    color: #684128;
+    color: #c4b4aa;
 }
 
 @font-face {
@@ -17,27 +19,24 @@ body {
 }
 
 .navigator {
-    grid-area: 'nav';
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    background-color: #efe4dc;
-}
-
-#navTitle {
-    font-size: 50px;
+    align-items: center;
 }
 
 .navigator a {
-    padding-left: 20%;
-    background-color: blue;
     display: block;
     text-decoration: none;
     color: inherit;
 }
 
 .pages {
-    background-color: red;
+    font-size: 2vw;
+    padding: 0;
+    margin: 10%;
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
 }
 
@@ -50,69 +49,174 @@ body {
 }
 
 .container {
+    display: grid;
+    grid-template-rows: 10vh 1fr;
     width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template-columns: max(20vw, 200px) 1fr;
-    grid-template-rows: 100vh;
-    grid-template-areas: 'nav content';
 }
 
 .pageContent {
-    grid-area: content;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    overflow: auto;
+    justify-content: top;
+    overflow-x: hidden;
 }
 
-.exampleContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, max(250px, 30%));
-    row-gap: 8vh;
-    column-gap: 20%;
-}
-
-.example {
-    width: 100%;
-    text-decoration: none;
-    color: inherit;
-}
-
-.example h2 {
-    font-size: 150%;
-    padding: 1rem 0rem;
-}
-
-.example img {
-    width: 100%;
-    object-fit: contain;
-    border-radius: 10px;
+h2 {
+    color: #b7a59a;
+    font-size: min(4.5vw, 100px);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .homeTitle {
     position: relative;
-    width: 70vw;
+    width: 100vw;
 }
 
 .homeTitle h1 {
-    color: #b4a499;
-    margin: 0;
+    color: #b7a59a;
+    margin: 0px 0px 0px 10vw;
+
     padding: 0;
-    font-size: min(12vw, 200px);
+    font-size: min(15vw, 270px);
 }
 
 .homeTitle h4 {
     color: #c8c0ba;
-    margin: 5px;
-    padding: 5px;
+    margin-left: 10vw;
+    margin-bottom: 1vh;
     font-size: min(3vw, 40px);
 }
 
-.canvasContainer {
+.catCanvas {
     position: absolute;
     top: 0%;
-    right: 0%;
-    width: 65%;
-    height: 95%;
+    right: 5%;
+    min-width: 100px;
+    width: 50%;
+    height: 100%;
+}
+
+.dinoContainer {
+    grid-area: dino;
+    position: relative;
+    display: block;
+    height: 80vh;
+}
+
+.dinoCanvas {
+    position: absolute;
+    top: -20%;
+    height: 140%;
+    max-height: 65rem;
+    min-height: 25rem;
+    width: 250%;
+    max-width: 90rem;
+    min-width: 70rem;
+}
+
+.logo {
+    margin-top: 2rem;
+    padding: 0;
+    width: 70vw;
+    object-fit: scale-down;
+}
+
+.gameImage {
+    border-radius: 30px;
+    margin: 1rem;
+    padding: 0;
+    width: 80vw;
+    object-fit: scale-down;
+}
+
+.infoContainer {
+    width: 50vw;
+
+}
+
+.twoColumns {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-areas: "awards dino";
+    margin-bottom: 5vh;
+}
+
+.info {
+    font-size: 1.5rem;
+    margin-bottom: 5vh;
+}
+
+.paperThing {
+    grid-area: awards;
+    display: grid;
+    grid-template-rows: 70% 1fr;
+}
+
+.awards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.awardsBox {
+    width: 40vw;
+    border-radius: 30px;
+    margin: 2rem;
+    display: block;
+    font-size: 1.5rem;
+    background-color: #f4e0d1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.playButton {
+    display: block;
+    margin: 3rem;
+    background-color: #fe9d6b;
+    color: white;
+    border-radius: 30px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roleBar {
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.role {
+    border-radius: 2rem;
+    display: block;
+    background-color: #f4e0d1;
+    font-size: 1rem;
+    padding: 2% 10%;
+    white-space: nowrap;
+}
+
+.bg {
+    z-index: -1000;
+    position: absolute;
+    width: 100vw;
+    opacity: 20%;
+}
+
+.awards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
