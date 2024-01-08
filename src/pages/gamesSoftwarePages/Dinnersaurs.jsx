@@ -28,9 +28,9 @@ export default function Dinnersaurs() {
 
     return (
         < >
-            <img className='gameImage' src={Concept1}></img >
+            <img className='bigImage' src={Concept1}></img >
 
-            <img className="logo" src={Logo}></img>
+            <img id="dinnerLogo" src={Logo}></img>
             <RoleBar roles={roles}></RoleBar>
 
             <div className='infoContainer'>
@@ -51,9 +51,9 @@ export default function Dinnersaurs() {
                     <DinoCanvas></DinoCanvas>
                 </div>
             </div>
-            <img className='gameImage' src={SS2}></img >
-            <img className='gameImage' src={SS3}></img >
-            <img className='gameImage' src={SS4}></img >
+            <img className='bigImage' src={SS2}></img >
+            <img className='bigImage' src={SS3}></img >
+            <img className='bigImage' src={SS4}></img >
 
 
         </>

@@ -117,24 +117,37 @@ h2 {
     min-width: 70rem;
 }
 
-.logo {
+#dinnerLogo {
     margin-top: 2rem;
     padding: 0;
     width: 70vw;
-    object-fit: scale-down;
+    object-fit: cover;
 }
 
-.gameImage {
+#tossLogo {
+    margin: 2rem;
+    padding: 0;
+    width: 60vw;
+    object-fit: cover;
+}
+
+.bigImage {
     border-radius: 30px;
     margin: 1rem;
     padding: 0;
     width: 80vw;
-    object-fit: scale-down;
+    object-fit: contain;
+}
+
+#tossImage {
+    width: 78%;
+    padding: 1%;
+    background-color: #4abaff;
+    display: block;
 }
 
 .infoContainer {
     width: 50vw;
-
 }
 
 .twoColumns {
