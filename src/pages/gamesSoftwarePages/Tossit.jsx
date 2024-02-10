@@ -1,5 +1,5 @@
-import Logo from "../../../public/images/tossit/logocombined.png";
-import SS1 from "../../../public/images/tossit/tossit1.png";
+import Logo from "../../assets/images/tossit/logocombined.png";
+import SS1 from "../../assets/images/tossit/tossit1.png";
 import RoleBar from "../../RoleBar";
 import Awards from "../../Awards";
 
