@@ -1,235 +1,240 @@
-html {}
+html {
+}
 
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'louis';
-    background: #f5ebe6;
-    color: #c4b4aa;
+  margin: 0px;
+  padding: 0px;
+  font-family: "louis";
+  background: #f5ebe6;
+  color: #c4b4aa;
 }
 
 @font-face {
-    font-family: 'louis';
-    src: url('../public/fonts/louis.ttf') format('truetype');
+  font-family: "louis";
+  src: url("../public/fonts/louis.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'monday';
-    src: url('../public/fonts/monday.ttf') format('truetype');
+  font-family: "monday";
+  src: url("../public/fonts/monday.ttf") format("truetype");
 }
 
+.solid {
+  border-top: 3px solid #645151;
+  height: 20%;
+}
 .navigator {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigator a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .pages {
-    font-size: 2vw;
-    padding: 0;
-    margin: 10%;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
+  font-size: 2vw;
+  padding: 0;
+  margin: 10%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
 }
 
 .pages a:hover {
-    backdrop-filter: brightness(98%) saturate(150%);
+  backdrop-filter: brightness(98%) saturate(150%);
 }
 
 .pages a.active {
-    backdrop-filter: brightness(95%) saturate(200%);
+  backdrop-filter: brightness(95%) saturate(200%);
 }
 
 .container {
-    display: grid;
-    grid-template-rows: 10vh 1fr;
-    width: 100vw;
-    height: 100vh;
+  display: grid;
+  grid-template-rows: 10vh 1fr;
+  width: 100vw;
+  height: 100vh;
 }
 
 .pageContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: top;
-    overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  overflow-x: hidden;
 }
 
 h2 {
-    color: #b7a59a;
-    font-size: min(4.5vw, 100px);
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  color: #b7a59a;
+  font-size: min(4.5vw, 100px);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .homeTitle {
-    position: relative;
-    width: 100vw;
+  position: relative;
+  width: 100vw;
 }
 
 .homeTitle h1 {
-    color: #b7a59a;
-    margin: 0px 0px 0px 10vw;
+  color: #b7a59a;
+  margin: 0px 0px 0px 10vw;
 
-    padding: 0;
-    font-size: min(15vw, 270px);
+  padding: 0;
+  font-size: min(15vw, 270px);
 }
 
 .homeTitle h4 {
-    color: #c8c0ba;
-    margin-left: 10vw;
-    margin-bottom: 1vh;
-    font-size: min(3vw, 40px);
+  color: #c8c0ba;
+  margin-left: 10vw;
+  margin-bottom: 1vh;
+  font-size: min(3vw, 40px);
 }
 
 .catCanvas {
-    position: absolute;
-    top: 0%;
-    right: 5%;
-    min-width: 100px;
-    width: 50%;
-    height: 100%;
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  min-width: 100px;
+  width: 50%;
+  height: 100%;
 }
 
 .dinoContainer {
-    grid-area: dino;
-    position: relative;
-    display: block;
-    height: 80vh;
+  grid-area: dino;
+  position: relative;
+  display: block;
+  height: 80vh;
 }
 
 .dinoCanvas {
-    position: absolute;
-    top: -20%;
-    height: 140%;
-    max-height: 65rem;
-    min-height: 25rem;
-    width: 250%;
-    max-width: 90rem;
-    min-width: 70rem;
+  position: absolute;
+  top: -20%;
+  height: 140%;
+  max-height: 65rem;
+  min-height: 25rem;
+  width: 250%;
+  max-width: 90rem;
+  min-width: 70rem;
 }
 
 #dinnerLogo {
-    margin-top: 2rem;
-    padding: 0;
-    width: 70vw;
-    object-fit: cover;
+  margin-top: 2rem;
+  padding: 0;
+  width: 70vw;
+  object-fit: cover;
 }
 
 #tossLogo {
-    margin: 2rem;
-    padding: 0;
-    width: 60vw;
-    object-fit: cover;
+  margin: 2rem;
+  padding: 0;
+  width: 60vw;
+  object-fit: cover;
 }
 
 .bigImage {
-    border-radius: 30px;
-    margin: 1rem;
-    padding: 0;
-    width: 80vw;
-    object-fit: contain;
+  border-radius: 30px;
+  margin: 1rem;
+  padding: 0;
+  width: 80vw;
+  object-fit: contain;
 }
 
 #tossImage {
-    width: 78%;
-    padding: 1%;
-    background-color: #4abaff;
-    display: block;
+  width: 78%;
+  padding: 1%;
+  background-color: #4abaff;
+  display: block;
 }
 
 .infoContainer {
-    width: 50vw;
+  width: 50vw;
 }
 
 .twoColumns {
-    display: grid;
-    grid-template-columns: 40vw 40vw;
-    grid-template-areas: "awards dino";
-    margin-bottom: 5vh;
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  grid-template-areas: "awards dino";
+  margin-bottom: 5vh;
 }
 
 .info {
-    font-size: 1.5rem;
-    margin-bottom: 5vh;
+  font-size: 1.5rem;
+  margin-bottom: 5vh;
 }
 
 .paperThing {
-    grid-area: awards;
-    display: grid;
-    grid-template-rows: 70% 1fr;
+  grid-area: awards;
+  display: grid;
+  grid-template-rows: 70% 1fr;
 }
 
 .awards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .awardsBox {
-    width: 40vw;
-    border-radius: 30px;
-    margin: 2rem;
-    display: block;
-    font-size: 1.5rem;
-    background-color: #f4e0d1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 40vw;
+  border-radius: 30px;
+  margin: 2rem;
+  display: block;
+  font-size: 1.5rem;
+  background-color: #f4e0d1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .playButton {
-    display: block;
-    margin: 3rem;
-    background-color: #fe9d6b;
-    color: white;
-    border-radius: 30px;
-    font-size: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: block;
+  margin: 3rem;
+  background-color: #fe9d6b;
+  color: white;
+  border-radius: 30px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .roleBar {
-    margin-top: 1vh;
-    margin-bottom: 5vh;
-    width: 30vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10%;
+  margin-top: 1vh;
+  margin-bottom: 5vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
 }
 
 .role {
-    border-radius: 2rem;
-    display: block;
-    background-color: #f4e0d1;
-    font-size: 1rem;
-    padding: 2% 10%;
-    white-space: nowrap;
+  border-radius: 2rem;
+  display: block;
+  background-color: #f4e0d1;
+  font-size: 1rem;
+  padding: 2% 10%;
+  white-space: nowrap;
 }
 
 .bg {
-    z-index: -1000;
-    position: absolute;
-    width: 100vw;
-    opacity: 20%;
+  z-index: -1000;
+  position: absolute;
+  width: 100vw;
+  opacity: 20%;
 }
 
 .awards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
