@@ -15,14 +15,9 @@ import S9 from "../../assets/images/tossit-new/s9.png";
 import S10 from "../../assets/images/tossit-new/s10.png";
 
 export default function Tossit() {
-  const roles = [
-    { name: "Next.js/React.js" },
-    { name: "Socket.io" },
-    { name: "Figma" },
-    { name: "Entreprenuership" },
-  ];
+  const roles = ["Next.js/React.js", "Socket.io", "Figma", "Entreprenuership"];
 
-  const awards = [{ name: "TSA Nationals (Software Development) #3" }];
+  const awards = ["2022 TSA Nationals (Software Development) #3"];
 
   return (
     <>
@@ -35,18 +30,24 @@ export default function Tossit() {
       <div className="tosslogo">TOSS-IT!</div>
       <RoleBar roles={roles}></RoleBar>
 
-      <div className="infoContainer">
-        <div className="info">
-          Toss-It is an educational webapp for teachers to host review sessions
-          where students can create their own quiz questions and then solve each
-          other’s questions. We are currently building out the second version,
-          testing the app in school districts, and developing a business model.
+      <div className="twoColumnsAsymmetrical">
+        <div className="infoContainer">
+          <div className="info">
+            <p>
+              Toss-It is an educational webapp for teachers to host review
+              sessions where students can create their own quiz questions and
+              then solve each other’s questions.
+            </p>
+            <p>
+              We are currently building out the second version, testing the app
+              in school districts, and developing a business model.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div className="awardsBox">
-        <h4>AWARDS</h4>
-        <Awards className="awards" awards={awards}></Awards>
+        <div className="awardsBox">
+          <h4>AWARDS</h4>
+          <Awards className="awards" awards={awards}></Awards>
+        </div>
       </div>
 
       <div className="threeColumns">

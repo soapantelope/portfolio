@@ -11,18 +11,13 @@ import Awards from "../../Awards";
 import DinoCanvas from "../../DinoCanvas";
 
 export default function Dinnersaurs() {
-  const roles = [
-    { name: "Team Lead" },
-    { name: "Unity" },
-    { name: "C#" },
-    { name: "Blender" },
-  ];
+  const roles = ["Team Lead", "Unity", "C#", "Blender"];
 
   const awards = [
-    { name: "TSA Nationals Qualifier" },
-    { name: "TSA State #5" },
-    { name: "WSPTA Best Art / Animation" },
-    { name: "WSPTA Best Sound" },
+    "2022 TSA Nationals Qualifier",
+    "2022 TSA State #5",
+    "2022 WSPTA Best Art / Animation",
+    "2022 WSPTA Best Sound",
   ];
 
   return (
@@ -32,17 +27,20 @@ export default function Dinnersaurs() {
       <img id="dinnerLogo" src={Logo}></img>
       <RoleBar roles={roles}></RoleBar>
 
-      <div className="infoContainer">
+      <div className="infoContainer" style={{ width: "50vw" }}>
         <div className="info">
-          You're an oviraptor being chased by several hungry dinosaurs. Steal
-          eggs with DDR-style mechanics and feed them to the dinosaurs to avoid
-          getting eaten!
+          <p>
+            You're an oviraptor being chased by several hungry dinosaurs. Steal
+            eggs with DDR-style mechanics and feed them to the dinosaurs to
+            avoid getting eaten!
+          </p>
+          <p>I led a team of 6 to create this video game.</p>
         </div>
       </div>
 
       <div className="twoColumnsSpecial">
         <div className="paperThing">
-          <div className="awardsBox">
+          <div className="awardsBox" style={{ width: "30vw" }}>
             <h4>AWARDS</h4>
             <Awards className="awards" awards={awards}></Awards>
           </div>
