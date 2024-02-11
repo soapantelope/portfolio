@@ -2,8 +2,8 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "louis";
-  background: #f5ebe6;
-  color: #c4b4aa;
+  background: #191717;
+  color: #dbc5b6;
 }
 
 @font-face {
@@ -30,6 +30,13 @@ body {
   margin: 3rem;
 }
 
+.frontInfo {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #b7a59a;
+  text-align: left;
+}
+
 .navigator {
   height: 100%;
   margin: none;
@@ -38,6 +45,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 20px 0px #000000;
+  z-index: 5;
 }
 
 .pageContainer {
@@ -49,18 +58,18 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
   text-decoration: none;
   text-align: center;
   color: inherit;
 }
 
 .pageContainer a:hover {
-  backdrop-filter: brightness(98%) saturate(150%);
+  backdrop-filter: brightness(70%) saturate(150%);
 }
 
 .pageContainer .active {
-  backdrop-filter: brightness(95%) saturate(200%);
+  backdrop-filter: brightness(40%) saturate(200%);
 }
 
 .pages {
@@ -99,11 +108,12 @@ h2 {
 }
 
 .homeTitle h1 {
-  color: #b7a59a;
+  color: #e7ddd7;
   margin: 0px 0px 0px 10vw;
-
+  font-family: "rowdies";
   padding: 0;
-  font-size: min(15vw, 270px);
+  font-size: min(13vw, 230px);
+  text-shadow: rgb(106, 102, 102) 0px 0 10px;
 }
 
 .homeTitle h4 {
@@ -162,20 +172,13 @@ h2 {
   object-fit: contain;
 }
 
-#tossImage {
-  width: 78%;
-  padding: 1%;
-  background-color: #4abaff;
-  display: block;
-}
-
 .infoContainer {
   width: auto;
   border-radius: 30px;
   padding: 3rem;
   display: block;
   font-size: 1.5rem;
-  background-color: #f4e0d1;
+  background-color: #2b2523;
 }
 
 .twoColumnsSpecial {
@@ -209,7 +212,7 @@ h2 {
   border-radius: 30px;
   padding: 1rem 3rem 3rem 3rem;
   font-size: 1.5rem;
-  background-color: #f4e0d1;
+  background-color: #2b2523;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,14 +231,14 @@ h2 {
 .twoColumnsAsymmetrical {
   width: 80vw;
   display: grid;
-  grid-template-columns: 50vw 1fr;
+  grid-template-columns: 50vw minmax(0, 1fr);
   column-gap: 2rem;
 }
 
 .twoColumnsAsymmetrical2 {
   width: 80vw;
   display: grid;
-  grid-template-columns: 1fr 50vw;
+  grid-template-columns: minmax(0, 1fr) 50vw;
   column-gap: 2rem;
 }
 
@@ -258,6 +261,7 @@ h2 {
   margin: 3rem;
   width: auto;
   background-color: #fe9d6b;
+  opacity: 50%;
   color: white;
   border-radius: 30px;
   font-size: 50px;
@@ -279,7 +283,7 @@ h2 {
 .role {
   border-radius: 2rem;
   display: block;
-  background-color: #f4e0d1;
+  background-color: #2b2523;
   font-size: 1rem;
   padding: 2% 10%;
   white-space: nowrap;
@@ -299,8 +303,8 @@ h4 {
 .tosslogo {
   font-family: "rowdies";
   font-size: min(12rem, 16vw);
-  color: rgb(255, 255, 255);
-  text-shadow: rgb(228, 206, 196) 0px 0 10px;
+  color: rgb(239, 228, 219);
+  text-shadow: rgb(0, 0, 0) 0px 0 10px;
   /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(198, 184, 177); */
 }
@@ -308,6 +312,6 @@ h4 {
 .gasslogo {
   font-family: "morris";
   font-size: min(12rem, 16vw);
-  color: rgb(255, 255, 255);
-  text-shadow: rgb(228, 206, 196) 0px 0 10px;
+  color: rgb(239, 228, 219);
+  text-shadow: rgb(0, 0, 0) 0px 0 10px;
 }

@@ -14,9 +14,6 @@ export default function App() {
           <NavLink to="/art-and-3D-models">Art/3D Models</NavLink>
         </li>
         <li className="pageContainer">
-          <NavLink to="/academics">Academics</NavLink>
-        </li>
-        <li className="pageContainer">
           <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>

@@ -10,6 +10,10 @@ export default function Home() {
         </div>
         <CatCanvas></CatCanvas>
       </div>
+      <div className="frontInfo">
+        I'm a freshman at Stanford University studying computer science. I'm
+        interested in...
+      </div>
     </>
   );
 }
