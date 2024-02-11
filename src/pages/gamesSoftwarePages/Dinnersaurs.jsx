@@ -40,7 +40,7 @@ export default function Dinnersaurs() {
         </div>
       </div>
 
-      <div className="twoColumns">
+      <div className="twoColumnsSpecial">
         <div className="paperThing">
           <div className="awardsBox">
             <h4>AWARDS</h4>
@@ -53,9 +53,12 @@ export default function Dinnersaurs() {
           <DinoCanvas></DinoCanvas>
         </div>
       </div>
-      <img className="bigImage" src={SS2}></img>
-      <img className="bigImage" src={SS3}></img>
-      <img className="bigImage" src={SS4}></img>
+      <div className="twoColumns">
+        <img className="displayImage" src={SS1}></img>
+        <img className="displayImage" src={SS2}></img>
+        <img className="displayImage" src={SS3}></img>
+        <img className="displayImage" src={SS4}></img>
+      </div>
     </>
   );
 }

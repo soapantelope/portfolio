@@ -1,12 +1,11 @@
-import Dinnersaurs from './gamesSoftwarePages/Dinnersaurs';
-import Tossit from './gamesSoftwarePages/Tossit';
+import Dinnersaurs from "./gamesSoftwarePages/Dinnersaurs";
+import Tossit from "./gamesSoftwarePages/Tossit";
 
 export default function GamesSoftware() {
-
-    return (
-        <>
-            <Dinnersaurs />
-            <Tossit />
-        </>
-    )
+  return (
+    <>
+      <Tossit />
+      <Dinnersaurs />
+    </>
+  );
 }
