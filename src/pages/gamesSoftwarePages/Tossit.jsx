@@ -21,7 +21,6 @@ export default function Tossit() {
 
   return (
     <>
-      <div className="solid"></div>
       <div className="twoColumns">
         <img className="displayImage" src={S4}></img>
         <img className="displayImage" src={S7}></img>

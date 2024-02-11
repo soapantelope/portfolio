@@ -27,8 +27,7 @@ body {
 }
 
 .solid {
-  border-top: 3px solid #645151;
-  height: 20%;
+  margin: 3rem;
 }
 
 .navigator {

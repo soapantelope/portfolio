@@ -49,6 +49,7 @@ export default function Gasser() {
           </div>
         </div>
       </div>
+      <div className="solid"></div>
     </>
   );
 }
