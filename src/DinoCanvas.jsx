@@ -39,7 +39,6 @@ function Dino({ divTop, divBottom }) {
 
   useEffect(() => {
     document.getElementById("content").addEventListener("scroll", handleScroll);
-
     return () => {
       document
         .getElementById("content")

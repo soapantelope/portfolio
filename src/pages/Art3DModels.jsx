@@ -1,5 +1,5 @@
+import Art from "./artPages/Art";
+
 export default function Art3DModels() {
-    return (
-        <div>Art/3D Models</div>
-    )
+  return <Art />;
 }
