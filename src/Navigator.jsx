@@ -8,10 +8,10 @@ export default function App() {
           <NavLink to="/">Home</NavLink>
         </li>
         <li className="pageContainer">
-          <NavLink to="/games-and-software">Games/Software</NavLink>
+          <NavLink to="/software-games">Software/Games</NavLink>
         </li>
         <li className="pageContainer">
-          <NavLink to="/art-and-3D-models">Art/3D Models</NavLink>
+          <NavLink to="/art">Art</NavLink>
         </li>
         <li className="pageContainer">
           <NavLink to="/contact">Contact</NavLink>

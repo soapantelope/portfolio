@@ -43,7 +43,10 @@ export default function Art() {
 
   return (
     <div className="artPage">
-      <h2>OIL PAINTINGS</h2>
+      <h2 style={{ marginBottom: "1rem" }}>OIL PAINTINGS</h2>
+      <div style={{ marginBottom: "4rem" }} className="info">
+        Scroll right to see more!
+      </div>
       <div className="artDisplay">
         {paintings.map((painting) => (
           <img className="artPiece" src={painting}></img>
@@ -64,7 +67,7 @@ export default function Art() {
         ))}
       </div>
 
-      <h2>OTHER</h2>
+      <h2 style={{ marginBottom: "1rem" }}>OTHER</h2>
       <div className="columns">
         <a
           className="specialBeatrice"

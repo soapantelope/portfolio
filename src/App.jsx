@@ -15,11 +15,8 @@ export default function App() {
         <div className="pageContent" id="content">
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route
-              path="games-and-software"
-              element={<GamesSoftware />}
-            ></Route>
-            <Route path="art-and-3D-models" element={<Art3DModels />}></Route>
+            <Route path="software-games" element={<GamesSoftware />}></Route>
+            <Route path="art" element={<Art3DModels />}></Route>
             <Route path="contact" element={<Contact />}></Route>
             <Route
               path="games-and-software/dinnersaurs"
