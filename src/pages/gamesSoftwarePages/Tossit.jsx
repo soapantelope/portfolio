@@ -33,9 +33,10 @@ export default function Tossit() {
         <div className="infoContainer">
           <div className="info">
             <p>
-              Toss-It is an educational webapp for teachers to host review
-              sessions where students can create their own quiz questions and
-              then solve each other’s questions.
+              Toss-It is an educational webapp for teachers to host student-led
+              review sessions. Students come up with their own quiz questions,
+              and then solve each other’s questions in a cutthroat competition
+              to score most points!
             </p>
             <p>
               Me and two friends created this project a couple years ago. Now,
