@@ -31,16 +31,17 @@ body {
 }
 
 .main {
-  width: 100vw;
+  width: 90vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: left;
   align-items: left;
-  margin-left: 10vw;
+  margin: 1rem 10vw;
   flex-wrap: wrap;
 }
 
 .mainContent {
+  flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -50,9 +51,16 @@ body {
 
 .frontInfo {
   margin-top: 2rem;
-  width: 59vw;
+  width: auto;
   font-size: 1.4rem;
-  color: #b7a59a;
+  color: #dbc5b6;
+}
+
+.cat {
+  object-fit: contain;
+  flex: 1;
+  min-width: 200px;
+  width: 10vw;
 }
 
 .navigator {
@@ -118,21 +126,22 @@ body {
 }
 
 h2 {
-  color: #b7a59a;
+  color: #c8c0ba;
   font-size: min(4.5vw, 100px);
 }
 
 .mainContent h1 {
-  color: #e7ddd7;
+  color: rgb(239, 228, 219);
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: "rowdies";
   padding: 0;
-  font-size: min(19vw, 13rem);
+  font-size: min(15vw, 13rem);
   text-shadow: rgb(106, 102, 102) 0px 0 10px;
 }
 
 .mainContent h4 {
+  font-family: inherit;
   margin-bottom: 0px;
   color: #c8c0ba;
   margin-bottom: 1vh;
@@ -346,6 +355,8 @@ h2 {
 }
 
 h4 {
+  color: #c8c0ba;
+
   font-size: 2rem;
   font-family: "rowdies";
 }

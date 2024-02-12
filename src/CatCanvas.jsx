@@ -32,8 +32,8 @@ function moveJoint(joint, verticalRotation, horizontalRotation) {
 function Cat() {
   const catRef = useRef();
   const catDirectRef = useRef();
-  const cat = useLoader(GLTFLoader, "../models/cat.glb?url");
-  const { nodes, materials } = useGLTF("../models/cat.glb?url");
+  const cat = useLoader(GLTFLoader, "../models/cat2.glb?url");
+  const { nodes, materials } = useGLTF("../models/cat2.glb?url");
 
   const info = useThree();
 
