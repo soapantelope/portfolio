@@ -21,9 +21,9 @@ export default function Tossit() {
 
   return (
     <>
-      <div className="twoColumns">
-        <img className="displayImage" src={S4}></img>
-        <img className="displayImage" src={S7}></img>
+      <div className="columns">
+        <img className="displayImage2" src={S4}></img>
+        <img className="displayImage2" src={S7}></img>
       </div>
 
       <div className="tosslogo">TOSS-IT!</div>
@@ -49,16 +49,16 @@ export default function Tossit() {
         </div>
       </div>
 
-      <div className="threeColumns">
-        <img className="displayImage" id="displayImage" src={S1}></img>
-        <img className="displayImage" id="displayImage" src={S2}></img>
-        <img className="displayImage" id="displayImage" src={S3}></img>
-        <img className="displayImage" id="displayImage" src={S4}></img>
-        <img className="displayImage" id="displayImage" src={S5}></img>
-        <img className="displayImage" id="displayImage" src={S9}></img>
-        <img className="displayImage" id="displayImage" src={S6}></img>
-        <img className="displayImage" id="displayImage" src={S8}></img>
-        <img className="displayImage" id="displayImage" src={S7}></img>
+      <div className="columns">
+        <img className="displayImage3" id="displayImage" src={S1}></img>
+        <img className="displayImage3" id="displayImage" src={S2}></img>
+        <img className="displayImage3" id="displayImage" src={S3}></img>
+        <img className="displayImage3" id="displayImage" src={S4}></img>
+        <img className="displayImage3" id="displayImage" src={S5}></img>
+        <img className="displayImage3" id="displayImage" src={S9}></img>
+        <img className="displayImage3" id="displayImage" src={S6}></img>
+        <img className="displayImage3" id="displayImage" src={S8}></img>
+        {/* <img className="displayImage3" id="displayImage" src={S7}></img> */}
       </div>
     </>
   );

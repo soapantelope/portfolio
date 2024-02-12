@@ -44,18 +44,18 @@ export default function Dinnersaurs() {
             <h4>AWARDS</h4>
             <Awards className="awards" awards={awards}></Awards>
           </div>
-          <div className="playButton">PLAY</div>
+          {/* <div className="playButton">PLAY</div> */}
         </div>
 
         <div className="dinoContainer">
           <DinoCanvas></DinoCanvas>
         </div>
       </div>
-      <div className="twoColumns">
-        <img className="displayImage" src={SS1}></img>
-        <img className="displayImage" src={SS2}></img>
-        <img className="displayImage" src={SS3}></img>
-        <img className="displayImage" src={SS4}></img>
+      <div className="columns">
+        <img className="displayImage2" src={SS1}></img>
+        <img className="displayImage2" src={SS2}></img>
+        <img className="displayImage2" src={SS3}></img>
+        <img className="displayImage2" src={SS4}></img>
       </div>
     </>
   );

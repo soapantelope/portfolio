@@ -29,7 +29,7 @@ export default function Gasser() {
       <div className="gasslogo">GASSER</div>
       <RoleBar roles={roles}></RoleBar>
 
-      <div className="twoColumnsAsymmetrical2">
+      <div className="twoColumnsAsymmetrical">
         <div className="awardsBox">
           <h4>AWARDS</h4>
           <Awards className="awards" awards={awards}></Awards>
@@ -50,13 +50,13 @@ export default function Gasser() {
         </div>
       </div>
 
-      <div className="threeColumns">
-        <img className="displayImage" src={S1}></img>
-        <img className="displayImage" src={S2}></img>
-        <img className="displayImage" src={S4}></img>
-        <img className="displayImage" src={S5}></img>
-        <img className="displayImage" src={S6}></img>
-        <img className="displayImage" src={S7}></img>
+      <div className="columns">
+        <img className="displayImage3" src={S1}></img>
+        <img className="displayImage3" src={S2}></img>
+        <img className="displayImage3" src={S4}></img>
+        <img className="displayImage3" src={S5}></img>
+        <img className="displayImage3" src={S6}></img>
+        <img className="displayImage3" src={S7}></img>
       </div>
 
       <div className="solid"></div>

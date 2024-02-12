@@ -8,6 +8,7 @@ export default function GamesSoftware() {
       <Tossit />
       <Dinnersaurs />
       <Gasser />
+      <div className="solid"></div>
     </>
   );
 }

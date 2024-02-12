@@ -27,7 +27,7 @@ body {
 }
 
 .solid {
-  margin: 3rem;
+  margin: 1rem;
 }
 
 .frontInfo {
@@ -175,7 +175,10 @@ h2 {
 }
 
 .infoContainer {
-  width: auto;
+  /* min-width: 300px;
+  width: 50vw; */
+  flex: 3;
+
   border-radius: 30px;
   padding: 3rem;
   display: block;
@@ -184,10 +187,10 @@ h2 {
 }
 
 .twoColumnsSpecial {
+  height: 60vh;
   display: grid;
-  grid-template-columns: 40vw 40vw;
+  grid-template-columns: 30vw 40vw;
   grid-template-areas: "awards dino";
-  margin-bottom: 5vh;
 }
 
 .info {
@@ -214,7 +217,9 @@ h2 {
 }
 
 .awardsBox {
-  width: auto;
+  flex: 1;
+
+  /* width: auto; */
   margin: 2rem 0rem;
   border-radius: 30px;
   padding: 1rem 3rem 3rem 3rem;
@@ -226,38 +231,59 @@ h2 {
   align-items: center;
 }
 
-.threeColumns {
-  margin-top: 3rem;
-  width: 80vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 5vh;
-  column-gap: 1rem;
-}
-
 .twoColumnsAsymmetrical {
-  width: 80vw;
+  /* margin: 1rem;
+
+  
   display: grid;
   grid-template-columns: 50vw minmax(0, 1fr);
-  column-gap: 2rem;
+  column-gap: 2rem; */
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+  width: 80vw;
+  flex-wrap: wrap;
 }
 
 .twoColumnsAsymmetrical2 {
+  margin: 1rem;
   width: 80vw;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 50vw;
   column-gap: 2rem;
 }
 
-.twoColumns {
+.columns {
+  /* margin: 1rem;
   width: 80vw;
   display: grid;
   grid-template-columns: 1fr minmax(0, 1fr);
-  column-gap: 1rem;
+  column-gap: 1rem; */
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+  width: 80vw;
+  flex-wrap: wrap;
 }
 
-.displayImage {
-  width: 100%;
+.displayImage2 {
+  flex: 1;
+  min-width: 350px;
+  width: 30%;
+  border-radius: 30px;
+  margin: 1rem;
+  object-fit: contain;
+}
+
+.displayImage3 {
+  flex: 1;
+  min-width: 200px;
+  width: 30%;
   border-radius: 30px;
   margin: 1rem;
   object-fit: contain;
@@ -304,7 +330,8 @@ h2 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-family: "rowdies";
 }
 
 .tosslogo {
@@ -350,4 +377,44 @@ h4 {
 .artPiece {
   border-radius: 30px;
   height: 100%;
+}
+
+.beatrice {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+
+.beatriceGallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+
+.specialBeatrice {
+  flex: 1;
+}
+
+.beatricePic {
+  border-radius: 30px;
+  width: max(20vh, 14vw);
+}
+
+.videoContainer {
+  width: 100%;
+  flex: 1;
+}
+
+.video {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
 }
