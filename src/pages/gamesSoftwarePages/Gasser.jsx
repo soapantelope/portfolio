@@ -46,6 +46,13 @@ export default function Gasser() {
               Gasser is a Hollow Knight-inspired side-scrolling platformer that
               I solo developed during high school.
             </p>
+            <a
+              target="_blank"
+              className="linkButton"
+              href="https://www.youtube.com/watch?v=bcrnO2EfbJk"
+            >
+              Watch Demo
+            </a>
           </div>
         </div>
       </div>
@@ -58,8 +65,6 @@ export default function Gasser() {
         <img className="displayImage3" src={S6}></img>
         <img className="displayImage3" src={S7}></img>
       </div>
-
-      <div className="solid"></div>
     </>
   );
 }

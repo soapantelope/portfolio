@@ -38,8 +38,10 @@ export default function Tossit() {
               then solve each other’s questions.
             </p>
             <p>
-              We are currently building out the second version, testing the app
-              in school districts, and developing a business model.
+              Me and two friends created this project a couple years ago. Now,
+              we've revamped the idea, and are currently building out the second
+              version, testing the app in school districts, and developing a
+              business model.
             </p>
           </div>
         </div>

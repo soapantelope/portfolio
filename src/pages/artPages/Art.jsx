@@ -28,11 +28,16 @@ import B2 from "../../assets/images/beatrice/Beatrice Builds a Dam!-03.png";
 import B3 from "../../assets/images/beatrice/Beatrice Builds a Dam!-04.png";
 import B4 from "../../assets/images/beatrice/Beatrice Builds a Dam!-05.png";
 
+import M1 from "../../assets/images/models/diyu1.png";
+import M2 from "../../assets/images/models/diyu2.png";
+import M3 from "../../assets/images/models/Monorail Front.png";
+import M4 from "../../assets/images/models/walkie.png";
+
 import YouTube from "react-youtube";
 
 export default function Art() {
   const paintings = [A1, A2, A3, A4, A5, A6, A9, A7, A8];
-  const sculptures = [S1, S5, S7, S3, S2, S4];
+  const sculptures = [S1, S5, S7, S3, S2, S4, M1, M2, M3, M4];
   const digitals = [D3, D5, D6, D2, D4, D7];
   const beatrices = [B2, B3];
 
@@ -45,7 +50,7 @@ export default function Art() {
         ))}
       </div>
 
-      <h2>SCULPTURES</h2>
+      <h2>SCULPTURES/3D MODELS</h2>
       <div className="artDisplay">
         {sculptures.map((sculpture) => (
           <img className="artPiece" src={sculpture}></img>

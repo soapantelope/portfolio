@@ -35,6 +35,13 @@ export default function Dinnersaurs() {
             avoid getting eaten!
           </p>
           <p>I led a team of 6 to create this video game.</p>
+          <a
+            target="_blank"
+            className="linkButton"
+            href="https://www.youtube.com/watch?v=3Z_JaI5T6Bk"
+          >
+            Watch Demo
+          </a>
         </div>
       </div>
 

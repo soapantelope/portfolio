@@ -30,11 +30,29 @@ body {
   margin: 1rem;
 }
 
+.main {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  margin-left: 10vw;
+  flex-wrap: wrap;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  width: 50rem;
+}
+
 .frontInfo {
-  margin: 2rem;
-  font-size: 1.5rem;
+  margin-top: 2rem;
+  width: 59vw;
+  font-size: 1.4rem;
   color: #b7a59a;
-  text-align: left;
 }
 
 .navigator {
@@ -104,34 +122,29 @@ h2 {
   font-size: min(4.5vw, 100px);
 }
 
-.homeTitle {
-  position: relative;
-  width: 100vw;
-}
-
-.homeTitle h1 {
+.mainContent h1 {
   color: #e7ddd7;
-  margin: 0px 0px 0px 10vw;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-family: "rowdies";
   padding: 0;
-  font-size: min(13vw, 230px);
+  font-size: min(19vw, 13rem);
   text-shadow: rgb(106, 102, 102) 0px 0 10px;
 }
 
-.homeTitle h4 {
+.mainContent h4 {
+  margin-bottom: 0px;
   color: #c8c0ba;
-  margin-left: 10vw;
   margin-bottom: 1vh;
   font-size: min(3vw, 40px);
 }
 
 .catCanvas {
   position: absolute;
-  top: 0%;
-  right: 5%;
-  min-width: 100px;
-  width: 50%;
-  height: 100%;
+  top: 5%;
+  right: -5%;
+  width: 90%;
+  height: 90%;
 }
 
 .dinoContainer {
@@ -181,7 +194,6 @@ h2 {
 
   border-radius: 30px;
   padding: 3rem;
-  display: block;
   font-size: 1.5rem;
   background-color: #2b2523;
 }
@@ -195,6 +207,10 @@ h2 {
 
 .info {
   font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .paperThing {
@@ -417,4 +433,25 @@ h4 {
   flex-direction: column;
   justify-content: right;
   align-items: right;
+}
+
+.linkButton {
+  text-decoration: none;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  width: auto;
+  background-color: #5c4b43;
+  color: #e7ddd7;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-align: center;
+  z-index: 5;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
