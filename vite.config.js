@@ -6,4 +6,7 @@ export default defineConfig({
   plugins: [react()],
   assetsInclude: ["**/*.glb"],
   //base: "/portfolio/",
+  rollupOptions: {
+    external: "react-social-icons",
+  },
 });
